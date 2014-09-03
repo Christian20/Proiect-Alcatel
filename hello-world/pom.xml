@@ -14,7 +14,15 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+	<dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+      <type>jar</type>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
+ 
   <build>
     <finalName>hello-world</finalName>
 	<plugins>
@@ -23,10 +31,28 @@
 		<artifactId>tomcat7-maven-plugin</artifactId>
 		<version>2.2</version>
 		<configuration>
-			<url>http://localhost:8080/manager/text</url>
+			<url>${tomcat_manager_url}</url>
 			<server>TomcatServer</server>
 			<path>/hello-world</path>
 		</configuration>
+		</plugin>
+		<plugin>
+		<groupId>org.codehaus.mojo</groupId>
+        <artifactId>properties-maven-plugin</artifactId>
+        <version>1.0-alpha-2</version>
+        <executions>
+          <execution>
+            <phase>initialize</phase>
+            <goals>
+              <goal>read-project-properties</goal>
+            </goals>
+            <configuration>
+              <files>
+                <file>dev.properties</file>
+              </files>
+            </configuration>
+          </execution>
+        </executions>
 		</plugin>
 	</plugins>
   </build>
