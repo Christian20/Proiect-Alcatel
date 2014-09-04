@@ -1,0 +1,53 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for 1:hello-world:war:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.systemPath' for jxl:excel-api:jar should not point at files within the project directory, ${project.basedir}/src/main/webapp/WEB-INF/lib/jxl.jar will be unresolvable by dependent projects @ line 30, column 16
+[WARNING] 'dependencies.dependency.systemPath' for catalina:catalina-api:jar should not point at files within the project directory, ${project.basedir}/lib/catalina.jar will be unresolvable by dependent projects @ line 38, column 16
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building hello-world Maven Webapp 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- properties-maven-plugin:1.0-alpha-2:read-project-properties (default) @ hello-world ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hello-world ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\Documents and Settings\user\MyProject\hello-world\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ hello-world ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hello-world ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\Documents and Settings\user\MyProject\hello-world\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ hello-world ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ hello-world ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:2.4:war (default-war) @ hello-world ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [hello-world] in [D:\Documents and Settings\user\MyProject\hello-world\target\hello-world]
+[INFO] Processing war project
+[INFO] Copying webapp webResources [D:\Documents and Settings\user\MyProject\hello-world\src/main/webapp/WEB-INF/lib/] to [D:\Documents and Settings\user\MyProject\hello-world\target\hello-world]
+[INFO] Copying webapp resources [D:\Documents and Settings\user\MyProject\hello-world\src\main\webapp]
+[INFO] Webapp assembled in [594 msecs]
+[INFO] Building war: D:\Documents and Settings\user\MyProject\hello-world\target\hello-world.war
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ hello-world ---
+[INFO] Installing D:\Documents and Settings\user\MyProject\hello-world\target\hello-world.war to D:\Documents and Settings\user\.m2\repository\1\hello-world\1.0-SNAPSHOT\hello-world-1.0-SNAPSHOT.war
+[INFO] Installing D:\Documents and Settings\user\MyProject\hello-world\pom.xml to D:\Documents and Settings\user\.m2\repository\1\hello-world\1.0-SNAPSHOT\hello-world-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.187 s
+[INFO] Finished at: 2014-09-04T13:29:11+03:00
+[INFO] Final Memory: 8M/20M
+[INFO] ------------------------------------------------------------------------
