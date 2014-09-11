@@ -21,14 +21,14 @@
       <type>jar</type>
       <scope>provided</scope>
     </dependency>
-	<dependency>
+	<!-- <dependency>
       <groupId>jxl</groupId>
       <artifactId>excel-api</artifactId>
       <version>2.5</version>
       <type>jar</type>
       <scope>system</scope>
 	  <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/jxl.jar</systemPath>
-    </dependency>
+    </dependency> -->
 	<dependency>
       <groupId>catalina</groupId>
       <artifactId>catalina-api</artifactId>
@@ -62,16 +62,16 @@
 					</manifest>
 				</archive>
 				<!-- <packagingIncludes>src/main/webapp/WEB-INF/lib/jxl.jar</packagingIncludes> -->
-				<webResources> 
+				<!-- <webResources> 
 					<resource> 
 					  <directory>src/main/webapp/WEB-INF/lib</directory> 
-					  <targetPath>WEB-INF/lib</targetPath>
+		 			  <targetPath>WEB-INF/lib</targetPath>
 							<filtering>true</filtering>
 							<includes>
 							   <include>**/*.jar</include>
 							</includes>
 					</resource> 
-			  </webResources>
+			  </webResources> -->
 			</configuration>
 		</plugin>
 		<plugin>
